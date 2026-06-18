@@ -18,7 +18,16 @@ with tab2:
     nhc.show()
 
 with tab3:
-    operativo.show()
+    sub1, sub2, sub3 = st.tabs(["📋 Malla", "📈 Asistencia", "🗺️ Seguimiento Visitas"])
+
+    with sub1:
+        operativo.show_malla()
+
+    with sub2:
+        operativo.show_asistencia()
+
+    with sub3:
+        operativo.show_seguimiento()
 
 with tab4:
     sample.show()
